@@ -1,0 +1,30 @@
+.app-container {
+    background-color: var(--bg);
+    color: var(--text);
+    width: 100%;
+    height: 100dvh;
+}
+
+.test-container {
+    display: inline-block;
+    margin-left: 10px;
+    resize: both;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    outline: 1px solid red;
+
+
+    container: test/size;
+    margin-top: 10px;
+}
+
+.test-object {
+    color: aqua;
+}
+
+@container test (min-width: 700px) {
+    .test-object {
+        color: blue;
+    }
+}
